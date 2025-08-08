@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YYYHH & JCH Student Residence</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-content">
+            <div class="sidebar-logo">
+                <a href="#welcome" id="logoLink">
+                    <img src="logo.png" alt="YYYHH & JCH Student Residence Logo" class="sidebar-logo-img">
+                </a>
+            </div>
+            <ul class="sidebar-menu">
+                <li class="menu-section">
+                    <a href="#floors" class="sidebar-link main-link" data-target="floors">
+                        <span class="icon">🏠</span>
+                        <span class="text">Floor Groups</span>
+                        <span class="arrow">▼</span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a href="#hall8" class="sidebar-link sub-link" data-target="hall8">
+                            <span class="icon">🏢</span>
+                            <span class="text">Hall 8 (YYYHH)</span>
+                        </a></li>
+                        <li><a href="#jch" class="sidebar-link sub-link" data-target="jch">
+                            <span class="icon">🏢</span>
+                            <span class="text">JCH</span>
+                        </a></li>
+                    </ul>
+                </li>
+                <li class="menu-section">
+                    <a href="#activities" class="sidebar-link main-link" data-target="activities">
+                        <span class="icon">🎯</span>
+                        <span class="text">Activities</span>
+                        <span class="arrow">▼</span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a href="#regular-activities" class="sidebar-link sub-link" data-target="regular-activities">
+                            <span class="icon">📅</span>
+                            <span class="text">Regular Events</span>
+                        </a></li>
+                        <li><a href="#special-events" class="sidebar-link sub-link" data-target="special-events">
+                            <span class="icon">🌟</span>
+                            <span class="text">Special Events</span>
+                        </a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sidebar Overlay for Mobile -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Mobile Menu Button -->
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        
+        <!-- Theme Toggle Button -->
+        <button class="theme-toggle" id="themeToggle" title="Toggle Dark/Light Mode">
+            <span class="theme-icon sun">☀️</span>
+            <span class="theme-icon moon">🌙</span>
+        </button>
+        <!-- Welcome Section -->
+    <section class="welcome-section" id="welcome">
+        <div class="container">
+            <h1 class="welcome-title">
+                <span class="title-line handwritten-marker">Welcome</span>
+                <span class="title-line handwritten-marker">to</span>
+                <span class="title-line handwritten-marker">YYYHH (Hall8) & JCH!</span>
+            </h1>
+            <p class="welcome-text">
+                We're thrilled to have you as part of our vibrant residential community! 
+                Your journey here is about more than just academics—it's about building lasting friendships, 
+                discovering new passions, and creating memories that will last a lifetime.
+            </p>
+            <p class="welcome-text">
+                Connect with your floor mates and join exciting hall activities by scanning the QR codes below. 
+                Whether you want to chat with neighbors on your floor or participate in sports, workshops, and social events, 
+                there's something for everyone to make the most of your residence experience!
+            </p>
+        </div>
+    </section>
+
+    <!-- Floor Groups Section -->
+    <section class="qr-section" id="floors">
+        <div class="container">
+            <h2 class="section-title">🏠 Floor WeChat Groups</h2>
+            <p class="section-description">Connect with your floor mates, share living experiences with tutors, and get support for residence life</p>
+            
+            <!-- Hall 8 (YYYHH) Floors -->
+            <div class="building-section" id="hall8">
+                <h3 class="building-title">🏢 Hall 8 (YYYHH)</h3>
+                <div class="qr-grid">
+                    <div class="qr-card">
+                        <div class="qr-container">
+                            <img src="floor/h8_f1&2.png" alt="Hall 8 Floor 1&2 WeChat Group QR Code" class="qr-code">
+                        </div>
+                        <h3 class="qr-title">Floor 1&2</h3>
+                        <p class="qr-description">@Xueyan</p>
+                    </div>
+
+                    <div class="qr-card">
+                        <div class="qr-container">
+                            <img src="floor/h8_f3&4.png" alt="Hall 8 Floor 3&4 WeChat Group QR Code" class="qr-code">
+                        </div>
+                        <h3 class="qr-title">Floor 3&4</h3>
+                        <p class="qr-description">@Zhanchen</p>
+                    </div>
+
+                    <div class="qr-card">
+                        <div class="qr-container">
+                            <img src="floor/h8_f5&6&7.png" alt="Hall 8 Floor 5&6&7 WeChat Group QR Code" class="qr-code">
+                        </div>
+                        <h3 class="qr-title">Floor 5&6&7</h3>
+                        <p class="qr-description">@Yifei</p>
+                    </div>
+
+                    <div class="qr-card">
+                        <div class="qr-container">
+                            <img src="floor/h8_f8&9.png" alt="Hall 8 Floor 8&9 WeChat Group QR Code" class="qr-code">
+                        </div>
+                        <h3 class="qr-title">Floor 8&9</h3>
+                        <p class="qr-description">@Yilu</p>
+                    </div>
+
+                    <div class="qr-card">
+                        <div class="qr-container">
+                            <img src="floor/h8_f10&11.png" alt="Hall 8 Floor 10&11 WeChat Group QR Code" class="qr-code">
+                        </div>
+                        <h3 class="qr-title">Floor 10&11</h3>
+                        <p class="qr-description">@Chengcheng</p>
+                    </div>
+
+                    <div class="qr-card">
+                        <div class="qr-container">
+                            <img src="floor/h8_f12&13.png" alt="Hall 8 Floor 12&13 WeChat Group QR Code" class="qr-code">
+                        </div>
+                        <h3 class="qr-title">Floor 12&13</h3>
+                        <p class="qr-description">@Eben</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- JCH Floors -->
+            <div class="building-section" id="jch">
+                <h3 class="building-title">🏢 JCH</h3>
+                <div class="qr-grid">
+                    <div class="qr-card">
+                        <div class="qr-container">
+                            <img src="floor/jch_f1.png" alt="JCH Floor 1 WeChat Group QR Code" class="qr-code">
+                        </div>
+                        <h3 class="qr-title">Floor 1</h3>
+                        <p class="qr-description">@Tom</p>
+                    </div>
+
+                    <div class="qr-card">
+                        <div class="qr-container">
+                            <img src="floor/jch_f2.png" alt="JCH Floor 2 WeChat Group QR Code" class="qr-code">
+                        </div>
+                        <h3 class="qr-title">Floor 2</h3>
+                        <p class="qr-description">@Xingqi</p>
+                    </div>
+
+                    <div class="qr-card">
+                        <div class="qr-container">
+                            <img src="floor/jch_f3.png" alt="JCH Floor 3 WeChat Group QR Code" class="qr-code">
+                        </div>
+                        <h3 class="qr-title">Floor 3</h3>
+                        <p class="qr-description">@Xingqi</p>
+                    </div>
+
+                    <div class="qr-card">
+                        <div class="qr-container">
+                            <img src="floor/jch_f4.png" alt="JCH Floor 4 WeChat Group QR Code" class="qr-code">
+                        </div>
+                        <h3 class="qr-title">Floor 4</h3>
+                        <p class="qr-description">@Tom</p>
+                    </div>
+
+                    <div class="qr-card">
+                        <div class="qr-container">
+                            <img src="floor/jch_f5.png" alt="JCH Floor 5 WeChat Group QR Code" class="qr-code">
+                        </div>
+                        <h3 class="qr-title">Floor 5</h3>
+                        <p class="qr-description">@Xingqi</p>
+                    </div>
+
+                    <div class="qr-card">
+                        <div class="qr-container">
+                            <img src="floor/jch_f6.png" alt="JCH Floor 6 WeChat Group QR Code" class="qr-code">
+                        </div>
+                        <h3 class="qr-title">Floor 6</h3>
+                        <p class="qr-description">@Tom</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activities Section -->
+    <section class="qr-section activities-section" id="activities">
+        <div class="container">
+            <h2 class="section-title">🎯 Hall Activities</h2>
+            <p class="section-description">Join exciting activities and meet new friends through shared interests</p>
+            
+            <!-- Regular Events -->
+            <div class="activity-category" id="regular-activities">
+                <h3 class="category-title">📅 Regular Events</h3>
+                <p class="category-description">Regular activities with consistent schedules</p>
+                <div class="qr-grid">
+                    <div class="qr-card">
+                        <div class="qr-container">
+                            <img src="qr-codes/tennis.png" alt="Tennis QR Code" class="qr-code">
+                        </div>
+                        <h3 class="qr-title">🎾 Tennis</h3>
+                        <p class="qr-description">Regular court bookings and practice</p>
+                        <p class="qr-description">@Eben</p>
+                    </div>
+
+                    <div class="qr-card">
+                        <div class="qr-container">
+                            <img src="qr-codes/football.png" alt="Football QR Code" class="qr-code">
+                        </div>
+                        <h3 class="qr-title">⚽ Football</h3>
+                        <p class="qr-description">Weekly football sessions and matches</p>
+                        <p class="qr-description">@Eben</p>
+                    </div>
+
+                    <div class="qr-card">
+                        <div class="qr-container">
+                            <img src="qr-codes/board_game.png" alt="Board Games QR Code" class="qr-code">
+                        </div>
+                        <h3 class="qr-title">🐺 Board Games</h3>
+                        <p class="qr-description">Regular game nights and tournaments</p>
+                        <p class="qr-description">@Xingqi & Chengcheng</p>
+                    </div>
+
+                    <div class="qr-card">
+                        <div class="qr-container">
+                            <img src="qr-codes/cooking.png" alt="Cooking & Dessert QR Code" class="qr-code">
+                        </div>
+                        <h3 class="qr-title">👨‍🍳 Cooking & Dessert</h3>
+                        <p class="qr-description">Weekly cooking sessions and recipe sharing</p>
+                        <p class="qr-description">@Xueyan</p>
+                    </div>
+
+                    <div class="qr-card">
+                        <div class="qr-container">
+                            <img src="qr-codes/reading_movie.png" alt="Reading & Movie Night QR Code" class="qr-code">
+                        </div>
+                        <h3 class="qr-title">📚 Reading & Movie Night</h3>
+                        <p class="qr-description">Monthly book discussions and movie screenings</p>
+                        <p class="qr-description">@Xueyan & Chengcheng</p>
+                    </div>
+
+                    <div class="qr-card">
+                        <div class="qr-container">
+                            <img src="qr-codes/diy_workshop.png" alt="DIY Workshop QR Code" class="qr-code">
+                        </div>
+                        <h3 class="qr-title">🛠️ DIY Workshop</h3>
+                        <p class="qr-description">Creative workshops and craft sessions</p>
+                        <p class="qr-description">@Chengcheng</p>
+                    </div>
+
+                    <div class="qr-card">
+                        <div class="qr-container">
+                            <img src="qr-codes/trivia_night.png" alt="Trivia Night QR Code" class="qr-code">
+                        </div>
+                        <h3 class="qr-title">🧠 Trivia Night</h3>
+                        <p class="qr-description">Weekly trivia competitions and knowledge games</p>
+                        <p class="qr-description">@Yilu</p>
+                    </div>
+
+                    <div class="qr-card">
+                        <div class="qr-container">
+                            <img src="qr-codes/table_tennis.png" alt="Table Tennis QR Code" class="qr-code">
+                        </div>
+                        <h3 class="qr-title">🏓 Table Tennis</h3>
+                        <p class="qr-description">Regular table tennis sessions and tournaments</p>
+                        <p class="qr-description">@Tom</p>
+                    </div>
+
+                    <div class="qr-card">
+                        <div class="qr-container">
+                            <img src="qr-codes/cantonese_class.png" alt="Cantonese Class QR Code" class="qr-code">
+                        </div>
+                        <h3 class="qr-title">🗣️ Cantonese Class</h3>
+                        <p class="qr-description">Learn Cantonese language and culture</p>
+                        <p class="qr-description">@Tom</p>
+                    </div>
+
+                    <div class="qr-card">
+                        <div class="qr-container">
+                            <img src="qr-codes/badminton.png" alt="Badminton QR Code" class="qr-code">
+                        </div>
+                        <h3 class="qr-title">🏸 Badminton</h3>
+                        <p class="qr-description">Weekly sessions for all skill levels</p>
+                        <p class="qr-description">@Zhanchen</p>
+                    </div>
+
+                    <div class="qr-card">
+                        <div class="qr-container">
+                            <img src="qr-codes/yoga_class.png" alt="Yoga Class QR Code" class="qr-code">
+                        </div>
+                        <h3 class="qr-title">🧘 Yoga Class</h3>
+                        <p class="qr-description">Weekly yoga sessions for relaxation and fitness</p>
+                        <p class="qr-description">@Yifei</p>
+                    </div>
+
+                    <div class="qr-card">
+                        <div class="qr-container">
+                            <img src="qr-codes/pilates_class.png" alt="Pilates Class QR Code" class="qr-code">
+                        </div>
+                        <h3 class="qr-title">💪 Pilates Class</h3>
+                        <p class="qr-description">Weekly pilates sessions for core strength</p>
+                        <p class="qr-description">@Yifei</p>
+                    </div>
+
+                    <div class="qr-card">
+                        <div class="qr-container">
+                            <img src="qr-codes/basketball.png" alt="Basketball QR Code" class="qr-code">
+                        </div>
+                        <h3 class="qr-title">🏀 Basketball</h3>
+                        <p class="qr-description">Basketball tournaments and friendly matches</p>
+                        <p class="qr-description">@Yilu</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Special Events -->
+            <div class="activity-category" id="special-events">
+                <h3 class="category-title">🌟 Special Events</h3>
+                <p class="category-description">Occasional outdoor adventures and special activities. To be announced later via email.</p>
+                <div class="qr-grid">
+                    <div class="qr-card">
+                        <div class="qr-container">
+                            <div class="special-event-placeholder">
+                                <span>🏖️</span>
+                            </div>
+                        </div>
+                        <h3 class="qr-title">🏖️ Beach Tour & BBQ</h3>
+                        <p class="qr-description">Beach activities and BBQ events</p>
+                        <p class="qr-description">@Xingqi & Xueyan</p>
+                    </div>
+
+                    <div class="qr-card">
+                        <div class="qr-container">
+                            <div class="special-event-placeholder">
+                                <span>🥾</span>
+                            </div>
+                        </div>
+                        <h3 class="qr-title">🥾 Hiking & Outdoor Activities</h3>
+                        <p class="qr-description">Explore Hong Kong's beautiful trails and nature</p>
+                        <p class="qr-description">@Xingqi & Xueyan</p>
+                    </div>
+
+                    <div class="qr-card">
+                        <div class="qr-container">
+                            <div class="special-event-placeholder">
+                                <span>🚶</span>
+                            </div>
+                        </div>
+                        <h3 class="qr-title">🚶 Citywalk in HK</h3>
+                        <p class="qr-description">Explore Hong Kong's vibrant city life</p>
+                        <p class="qr-description">@Xingqi & Xueyan</p>
+                    </div>
+
+                    <div class="qr-card">
+                        <div class="qr-container">
+                            <div class="special-event-placeholder">
+                                <span>🍽️</span>
+                            </div>
+                        </div>
+                        <h3 class="qr-title">🍽️ Food Carnival</h3>
+                        <p class="qr-description">Food festivals and culinary experiences</p>
+                        <p class="qr-description">@Xueyan</p>
+                    </div>
+
+
+
+                    <div class="qr-card">
+                        <div class="qr-container">
+                            <div class="special-event-placeholder">
+                                <span>🤝</span>
+                            </div>
+                        </div>
+                        <h3 class="qr-title">🤝 Special School Volunteer</h3>
+                        <p class="qr-description">Volunteering opportunities and community service</p>
+                        <p class="qr-description">@Tom</p>
+                    </div>
+
+                    <div class="qr-card">
+                        <div class="qr-container">
+                            <div class="special-event-placeholder">
+                                <span>🎉</span>
+                            </div>
+                        </div>
+                        <h3 class="qr-title">🎉 Hall Parties</h3>
+                        <p class="qr-description">Special hall celebration events</p>
+                        <p class="qr-description">@Tom</p>
+                    </div>
+
+                    <div class="qr-card">
+                        <div class="qr-container">
+                            <div class="special-event-placeholder">
+                                <span>🌍</span>
+                            </div>
+                        </div>
+                        <h3 class="qr-title">🌍 Cultural Exchange Night</h3>
+                        <p class="qr-description">Cultural sharing and international exchange</p>
+                        <p class="qr-description">@Zhanchen</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 YYYHH & JCH Student Residence</p>
+            <p>From 2025 YYYHH & JCH Support Team</p>
+        </div>
+    </footer>
+    </div> <!-- End main-content -->
+
+    <!-- JavaScript for sidebar and theme functionality -->
+    <script>
+        // Theme Management
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.body;
+        
+        // Check for saved theme preference or default to light mode
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            body.classList.toggle('dark-mode', savedTheme === 'dark');
+        } else {
+            // Check for system preference
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            if (prefersDark) {
+                body.classList.add('dark-mode');
+                localStorage.setItem('theme', 'dark');
+            }
+        }
+        
+        // Theme toggle functionality
+        themeToggle.addEventListener('click', function() {
+            body.classList.toggle('dark-mode');
+            const isDark = body.classList.contains('dark-mode');
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        });
+        
+        // Listen for system theme changes
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e) {
+            if (!localStorage.getItem('theme')) {
+                body.classList.toggle('dark-mode', e.matches);
+            }
+        });
+
+        // Logo click to scroll to top
+        document.getElementById('logoLink').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('welcome').scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+            
+            // Update active state in sidebar
+            document.querySelectorAll('.sidebar-link').forEach(l => l.classList.remove('active'));
+            
+            // Close sidebar on mobile after clicking
+            if (window.innerWidth <= 768) {
+                document.getElementById('sidebar').classList.remove('open');
+                document.getElementById('sidebarOverlay').classList.remove('active');
+            }
+        });
+
+        // Smooth scrolling for sidebar links
+        document.querySelectorAll('.sidebar-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+                
+                // Update active state
+                document.querySelectorAll('.sidebar-link').forEach(l => l.classList.remove('active'));
+                this.classList.add('active');
+                
+                // Close sidebar on mobile after clicking
+                if (window.innerWidth <= 768) {
+                    document.getElementById('sidebar').classList.remove('open');
+                    document.getElementById('sidebarOverlay').classList.remove('active');
+                }
+            });
+        });
+
+        // Function to toggle sidebar
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            const overlay = document.getElementById('sidebarOverlay');
+            
+            sidebar.classList.toggle('open');
+            
+            if (window.innerWidth <= 768) {
+                overlay.classList.toggle('active');
+            }
+        }
+
+
+
+        // Mobile menu button functionality
+        document.getElementById('mobileMenuBtn').addEventListener('click', toggleSidebar);
+
+        // Close sidebar when clicking overlay
+        document.getElementById('sidebarOverlay').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.remove('open');
+            this.classList.remove('active');
+        });
+
+        // Close sidebar when clicking outside on mobile
+        document.addEventListener('click', function(e) {
+            const sidebar = document.getElementById('sidebar');
+            const mobileBtn = document.getElementById('mobileMenuBtn');
+            const overlay = document.getElementById('sidebarOverlay');
+            
+            if (window.innerWidth <= 768 && 
+                !sidebar.contains(e.target) && 
+                !mobileBtn.contains(e.target)) {
+                sidebar.classList.remove('open');
+                overlay.classList.remove('active');
+            }
+        });
+
+        // Highlight active section on scroll
+        window.addEventListener('scroll', function() {
+            const sections = ['floors', 'hall8', 'jch', 'activities', 'regular-activities', 'special-events'];
+            const scrollPos = window.scrollY + 150;
+            
+            sections.forEach(sectionId => {
+                const section = document.getElementById(sectionId);
+                const link = document.querySelector(`[data-target="${sectionId}"]`);
+                
+                if (section && link) {
+                    const sectionTop = section.offsetTop;
+                    const sectionBottom = sectionTop + section.offsetHeight;
+                    
+                    if (scrollPos >= sectionTop && scrollPos < sectionBottom) {
+                        document.querySelectorAll('.sidebar-link').forEach(l => l.classList.remove('active'));
+                        link.classList.add('active');
+                        
+                        // Also activate parent sections
+                        if (sectionId === 'hall8' || sectionId === 'jch') {
+                            document.querySelector('[data-target="floors"]').classList.add('active');
+                        }
+                        if (sectionId === 'regular-activities' || sectionId === 'special-events') {
+                            document.querySelector('[data-target="activities"]').classList.add('active');
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
