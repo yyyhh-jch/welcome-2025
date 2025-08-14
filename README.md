@@ -1,4 +1,4 @@
-# YYYHH & JCH Student Residence Website
+# YYYHH (Hall8) & JCH Student Residence Website
 
 A welcoming website for student residents to connect with their floor communities and join hall activities.
 
